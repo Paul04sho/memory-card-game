@@ -1,0 +1,39 @@
+[
+    {
+        "image": "../assets/arceus.png",
+        "name": "arceus"
+    },
+    {
+        "image": "../assets/bulbizarre.png",
+        "name": "bulbizarre"
+    },
+    {
+        "image": "../assets/dracaufeu.png",
+        "name": "dracaufeu"
+    },
+    {
+        "image": "../assets/evoli.png",
+        "name": "evoli"
+    },
+    {
+        "image": "../assets/greninja.png",
+        "name": "greninja"
+    },
+    {
+        "image": "../assets/mew.png",
+        "name": "mew"
+    },
+    {
+        "image": "../assets/mimikyu.png",
+        "name": "mimikyu"
+    },
+    {
+        "image": "../assets/onix.png",
+        "name": "onix"
+    },
+    {
+        "image": "../assets/pikachu.png",
+        "name": "pikachu"
+    }
+
+]
