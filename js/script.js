@@ -42,12 +42,36 @@ let arr = ["🎄", "❤️", "🎅", "👀", "🙏"];
 shuffleCards(arr);
 console.log(arr);
 
+// Fonction qui permet d'afficher les différentes cartes à l'écran
 function generateCards() {
-    const items = document.createElement("div");
+   for (let card of cards) {
+    const cardItem = document.createElement("div");
+    cardItem.setAttribute("data-name", "name")
+    cardItem.classList.add("card");
 
-    items.classList.add("card");
-    container.appendChild(items);
+    cardItem.innerHTML = `
+    <div class="front">
+    <img class="front-image" src = ${card.image}></img>
+    </div>
+    <div class="back"></div>
+    `
+
+    container.appendChild(cardItem);
+    // Appel de la fonction de retournement
+   }
 }
+
+// Fonction qui permet de retourner les cartes au clic des utilisateurs 
+function flipCard() {
+    if(lockboard) return;
+    firstCard.addEventListener('dblclick', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+}
+
+
 
 
 
